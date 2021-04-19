@@ -1,19 +1,15 @@
-import discord, os, keep_alive, asyncio, datetime, pytz
+from flask import Flask
+from threading import Thread
 
+app = Flask('')
 
-from discord.ext import tasks, commands
+@app.route('/')
+def main():
+    return "Creator Steus#0001"
 
-client = commands.Bot(
-  command_prefix=':',
-  self_bot=True
-)
+def run():
+    app.run(host="0.0.0.0", port=8080)
 
-
-
-@client.event
-async def on_connect():
-  await client.change_presence(activity = discord.Streaming(name = "24/7 Online ┊ 6AM - 10PM Online ┊ Late Respond ┊ Puasa bor. ┊ 7/30 Hari lagi.", url = "https://www.twitch.tv/Danish8409"))
-
-
-keep_alive.keep_alive()
-client.run(os.getenv("TOKEN"), bot=False)
+def keep_alive():
+    server = Thread(target=run)
+    server.start()
