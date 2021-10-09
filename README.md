@@ -11,3 +11,8 @@ STATUS_DELAY = 10 // I recommend you to don't add lower than 10 because you can 
 ```
 
 #### Examples
+```js
+TOKEN = 'NaYGwmiJnwjnJjwma' // Not real token.
+STATUS = ['a game.', 'in twitch.']
+STATUS_DELAY = 15
+```
