@@ -1,18 +1,26 @@
-import discord, os, keep_alive, asyncio, datetime, pytz
-
+import discord, os, keep_alive, asyncio, datetime, pytz, random
 
 from discord.ext import tasks, commands
 
-client = commands.Bot(
-  command_prefix=':',
-  self_bot=True
-)
-
+client = commands.Bot(command_prefix=':', self_bot=True)
 
 
 @client.event
-async def on_connect():
-  await client.change_presence(activity = discord.Streaming(name = "24/7 Online ┊ 6AM - 10PM Online ┊ Late Respond ┊ Puasa bor. ┊ 7/30 Hari lagi.", url = "https://www.twitch.tv/Danish8409"))
+async def ch_pr():
+  await client.wait_until_ready()
+
+  statuses = os.getenv("STATUS")
+
+  while not client.is_closed():
+
+    status = random.choice(statuses)
+
+    await client.change_presence(activity=discord.Streaming(name=status, url="https://www.twitch.tv/Scoooolzs"))
+
+    await asyncio.sleep(os.getenv("STATUS_DELAY"))
+
+client.loop.create_task(ch_pr())
+
 
 
 keep_alive.keep_alive()
