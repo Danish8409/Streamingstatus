@@ -2,8 +2,8 @@
 
 | Project | By |
 | --- | --- |
-| Created | (Danish8409)[https://github.com/Danish8409] |
-| Modified | Scoooolz |
+| Created | [Danish8409](https://github.com/Danish8409) |
+| Modified | [Scoooolz](https://github.com/Scoooolz) |
 
 ### ENV
 #### Tutorial
