@@ -9,7 +9,7 @@ client = commands.Bot(command_prefix=':', self_bot=True)
 async def ch_pr():
   await client.wait_until_ready()
 
-  statuses = ["A game. || Sedang Menggabut", "With Scoooolzs. || Sedang Menggabut", "With you. || Sedang Menggabut"]
+  statuses = os.getenv("STATUS")
 
   while not client.is_closed():
 
@@ -17,7 +17,7 @@ async def ch_pr():
 
     await client.change_presence(activity=discord.Streaming(name=status, url="https://www.twitch.tv/Scoooolzs"))
 
-    await asyncio.sleep(10)
+    await asyncio.sleep(os.getenv("STATUS_DELAY"))
 
 client.loop.create_task(ch_pr())
 
