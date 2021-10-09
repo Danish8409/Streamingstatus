@@ -3,7 +3,7 @@
 | Project | By | Repo |
 | --- | --- | --- |
 | Created | [Danish8409](https://github.com/Danish8409) | [This](https://github.com/Danish8409/Streamingstatus) |
-| Modified | [Scoooolz](https://github.com/Scoooolz) | [This](https://github.com/Scoooolz/Streamingstatus) |
+| Modified | [Scoooolz](https://github.com/Scoooolz) | [This](https://github.com/Scoooolz/Changing-Streaming-Status) |
 
 ### ENV
 #### Tutorial
