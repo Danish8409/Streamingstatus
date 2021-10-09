@@ -10,7 +10,7 @@
 ```js
 TOKEN = 'Your user token'
 STATUS = ['status 1', 'status 2', 'status 3'] // You can add more.
-STATUS_DELAY = 10 // I recommend you to don't add lower than 10 because you can get banned.
+STATUS_DELAY = 10 // Seconds. | I recommend you to don't add lower than 10 seconds because you can get banned by spamming the databases.
 ```
 
 #### Examples
