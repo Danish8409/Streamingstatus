@@ -1,8 +1,10 @@
-# Streaming status
+## Changing Streaming status
 
-Modified by Scoooolzs#7975
+| Project | By |
+| --- | --- |
+| Created | Danish |
 
-## ENV
+### ENV
 #### Tutorial
 ```js
 TOKEN = 'Your user token'
